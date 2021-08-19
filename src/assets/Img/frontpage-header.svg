@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="769.111" height="83.506" viewBox="0 0 769.111 83.506">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #333;
+        opacity: 0.899;
+      }
+
+      .cls-2 {
+        fill: #fff;
+        font-size: 30px;
+        font-family: OpenSans-Semibold, Open Sans;
+        font-weight: 600;
+      }
+
+      .cls-3 {
+        fill: red;
+        stroke: #707070;
+        opacity: 0.499;
+      }
+    </style>
+  </defs>
+  <g id="Site_Headers" data-name="Site Headers" transform="translate(0.5)">
+    <path id="Path_6" data-name="Path 6" class="cls-1" d="M226,309.189H994.233s8.942,64.915-60.185,64.915H226Z" transform="translate(-226 -309.189)"/>
+    <text id="VELKOMMEN_TIL_HOTEL_OVERLOOK_ONLINE" data-name="VELKOMMEN TIL HOTEL OVERLOOK ONLINE" class="cls-2" transform="translate(24 44.811)"><tspan x="0" y="0">VELKOMMEN TIL HOTEL OVERLOOK ONLINE</tspan></text>
+    <path id="Path_7" data-name="Path 7" class="cls-3" d="M226,309.189H853.708s7.307,18.092-49.176,18.092H226Z" transform="translate(-226 -244.275)"/>
+  </g>
+</svg>

@@ -1,56 +1,57 @@
-@import '../../styles/App.css';
-
 .navBar {
     width: 100%;
-    background-color: white;
+    background-color: black;
     display: grid;
-    grid-template-columns:25% 25% 50%;
+    grid-template-columns:40% 60%;
     box-shadow: -5px 0.5px 10px black;
-
+    height:130px;
+    z-index: 1;
+    position: fixed;
     ul {
         margin:auto;
-        width: 60%;
+        width: 90%;
         display:grid;
-        grid-template-columns: auto auto auto auto auto auto;
+        grid-template-columns: auto auto auto auto auto;
         justify-content: center;
         align-items: center;
         height: 70px;
-          .link {
+        padding-top: 5%;
+        .login {
             list-style-type: none;
-            
             a {
-                color:  rgb(124,107, 107);
+                color: #fff;
                 text-decoration: none;
+                padding-left: 10px;
+                text-transform: uppercase;
+                font-weight:bold;
+                font-size: 1.1rem;
             }
             a:hover {
-                color: #E9485B;
+                color: #FF0000;
             }
+        }
+        
+        .link {
+            list-style-type: none;   
+            a {
+                color: #fff;
+                text-decoration: none;
+                padding-right: 10px;
+                padding-left: 10px;
+                text-transform: uppercase;
+                font-weight:bold;
+                font-size: 1.1rem;
+                border-right: 1px solid #fff;
+            }
+            a:hover {
+                color: #FF0000;
+            }  
+        }
+    } 
 
-        }
-
-        .dropdown {
-            overflow: hidden;
-            display: none;
-        }
-        .dropdowncontent {
-            display: none;
-            position: absolute;
-            background-color: #f9f9f9;
-            min-width: 160px;
-            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-            z-index: 1;
-        }
-        .dropdowncontent a {
-            float: none;
-            color: black;
-            padding: 12px 16px;
-            text-decoration: none;
-            display: block;
-            text-align: left;
-          }
-          .dropdown:hover .dropdown .dropdown-content {
-            display: block;
-          }
-      
+    .Logo {
+        margin: auto;
+        margin-left: 15%;
     }
 }
+

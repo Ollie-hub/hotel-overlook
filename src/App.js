@@ -1,7 +1,8 @@
 import './App.css';
-import { Navigation } from './components/navigation/Navigation';
-import { LoginPage } from './pages/loginpage/LoginPage';
+import { Navigation } from './components/Navigation/Navigation';
+import { LoginPage } from './pages/LoginPage/LoginPage'
 import { BrowserRouter as Browser, Switch, Route, Redirect } from 'react-router-dom';
+import { FrontPage } from './pages/FrontPage/FrontPage';
 
 function App() {
   return (
@@ -9,24 +10,15 @@ function App() {
       <Navigation />
       <Switch>
         <Route exact path="/forside">
+          <FrontPage />
+        </Route>
+        <Route exact path="/hoteller">
 
         </Route>
-        <Route exact path="/events">
+        <Route exact path="/vaerelser">
 
         </Route>
-        <Route exact path="/line-up">
-
-        </Route>
-        <Route exact path="/program">
-
-        </Route>
-        <Route exact path="/camps">
-
-        </Route>
-        <Route exact path="/billetter">
-
-        </Route>
-        <Route exact path="/praktisk-info">
+        <Route exact path="/resevation">
 
         </Route>
         <Route exact path="/login">
