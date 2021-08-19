@@ -5,9 +5,9 @@ import { doFetch } from '../Fetch/fetch'
 
 export function Rooms() {
 
-    const [news, setRooms] = useState([])
+    const [rooms, setRooms] = useState([])
 
-    const url = 'https://api.mediehuset.net/overlook/rooms/by_hotel/{{id}}'
+    const url = 'https://api.mediehuset.net/overlook/rooms/by_hotel/1'
 
     const getRooms = async () => {
         let res = await doFetch(url)
@@ -20,14 +20,14 @@ export function Rooms() {
 
     return (
         <section className={Style.Rooms}>
-            <h2>..</h2>'
+            <h2>Se vores udvalg af værelser</h2>
             <div className={Style.roomGrid}>
-                {news.items && news.items.map((item, i) => {
-                    if (i < 1) {
+                {rooms.items && rooms.items.map((item, i) => {
+                    if (i < 3) {
                         return (
-                            <div key={item.id}>
-                                <img src={item.image} alt={item.title}></img>
-                                <h4>{item.title}</h4>
+                            <div className={Style.roomItems} key={item.id}>
+                                <img src={item.images[0].image} alt={item.room_title}></img>
+                                <h4>{item.room_title}</h4>
                             </div>
                         )
                     }
@@ -39,5 +39,4 @@ export function Rooms() {
             </div>
         </section>
     )
-
 }

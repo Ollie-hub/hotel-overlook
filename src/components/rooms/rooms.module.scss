@@ -1,3 +1,37 @@
-.news {
-    margin-top: 5%;
+* {
+    margin: 0;
+    padding: 0;
+}
+.Rooms {
+    display: grid;
+    justify-content: center;
+    margin: auto;
+    margin-top: 0%;
+
+    h2 {
+        margin-left: 30px; //needs to be the same as the newsItems margin
+        margin-top: 2.5%;
+        margin-bottom: 1.5%;
+    }
+    .roomGrid {
+        display: grid;
+        grid-template-columns: auto auto auto;
+        
+        .roomItems {
+            box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+            margin-left: 30px;
+            margin-right: 30px;
+            
+            img {
+                width: 530px;
+            }
+            h4 {
+                display: grid;
+                padding: 15px;
+                padding-left: 5%;
+                font-size: 1.5rem;
+                width: 500px;
+            }
+        }
+    }
 }

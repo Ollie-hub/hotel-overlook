@@ -20,12 +20,12 @@ export function News() {
 
     return (
         <section className={Style.news}>
-            <h2>Sidste nyt</h2>'
+            <h2>Sidste nyt</h2>
             <div className={Style.newsGrid}>
                 {news.items && news.items.map((item, i) => {
                     if (i < 3) {
                         return (
-                            <div key={item.id}>
+                            <div className={Style.newsItems} key={item.id}>
                                 <img src={item.image} alt={item.title}></img>
                                 <h4>{item.title}</h4>
                             </div>
